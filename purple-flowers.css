@@ -1174,3 +1174,43 @@ body {
 .not-loaded * {
   animation-play-state: paused !important;
 }
+
+/* Responsive para pantallas pequeñas (teléfonos) */
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    overflow-x: hidden;
+  }
+
+  .flowers {
+    transform: scale(0.6); /* Reducir tamaño general en móviles */
+  }
+
+  .flower {
+    bottom: 5vmin;
+  }
+
+  p {
+    font-size: 16px !important;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .flower__leaf,
+  .flower__line,
+  .flower__light,
+  .flower__grass,
+  .flower__g-front,
+  .flower__g-right,
+  .flower__g-fr,
+  .long-g {
+    transform: scale(0.9);
+  }
+
+  .flower__light {
+    filter: blur(0.4vmin);
+  }
+}
+
